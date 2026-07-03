@@ -1,13 +1,14 @@
 ---
 import { FiMenu, FiX } from "react-icons/fi";
-import NotificationBell from "./notificationBell.jsx";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa6";
 
+
 const links = [
-  { name: "Inicio", href: "/" },
-  { name: "Proyectos", href: "/proyectos" },
-  { name: "Sobre Mi", href: "/about" },
-  { name: "Contacto", href: "/contact" },
+  { name: "Home", href: "/" },
+  { name: "Projects", href: "/proyectos" },
+  { name: "About Me", href: "/about" },
+  { name: "Contact", href: "/contact" },
+
 ];
 ---
 
@@ -25,7 +26,7 @@ const links = [
         <h3
           class="text-[#69c7c7] text-3xl font-bold drop-shadow-[1.5px_1.5px_0_#7836cf]"
         >
-          LRC
+          DRA
         </h3>
       </a>
 
@@ -45,10 +46,8 @@ const links = [
         }
 
         <li class="flex items-center gap-3">
-          <NotificationBell client:visible />
-
           <a
-            href="www.linkedin.com/in/daniela-ramirez-developer"
+            href="https://www.linkedin.com/in/daniela-ramirez-developer/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -66,12 +65,24 @@ const links = [
           >
             <FaGithub className="h-7 w-7 cursor-pointer hover:text-[#7836cf]" />
           </a>
+
+          <a
+            href="https://www.artstation.com/danyraad"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="ArtStation"
+          >
+            <img
+              src="/icons/artstation.svg"
+              alt="ArtStation"
+              class="h-7 w-7 hover:opacity-80"
+            />
+          </a>
         </li>
       </ul>
 
       <!-- Mobile right-side icons -->
       <div class="flex md:hidden items-center gap-4 z-50">
-        <NotificationBell client:visible />
         <label for="menu-toggle" class="cursor-pointer">
           <FiMenu className="h-7 w-7 text-white peer-checked:hidden" />
           <FiX className="h-7 w-7 text-white hidden peer-checked:block" />
@@ -128,7 +139,7 @@ const links = [
 
       allLinks.forEach((link) => {
         const hrefAttr = link.getAttribute("href");
-        const href = hrefAttr?.replace(/\/$/, "") || "" || "/";
+        const href = hrefAttr?.replace(/\/$/, "") || "/" ;
 
         if (href === currentPath) {
           link.classList.add("text-[#7d2dac]", "font-extrabold");
