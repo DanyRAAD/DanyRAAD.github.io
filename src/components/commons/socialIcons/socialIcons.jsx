@@ -7,46 +7,59 @@ import {
 
 const SocialIcons = () => {
   return (
-    <div className="my-5 flex items-center justify-center">
+    <div className="my-5 flex items-center justify-center gap-4">
       <a
-        href="https://www.linkedin.com/in/daniela-ramirez-developer/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mr-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
-        aria-label="Linkedin"
-      >
-        <FaLinkedinIn className="h-7 w-7" />
+            href="https://www.linkedin.com/in/daniela-ramirez-developer/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img
+              src="/icons/linkedin_color.svg"
+              alt="LinkedIn"
+              class="h-7 w-7 hover:opacity-80"
+            />
       </a>
 
       <a
-        href="https://github.com/DanyRAAD"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mx-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
-        aria-label="Github"
-      >
-        <FaGithub className="h-7 w-7" />
+            href="https://github.com/DanyRAAD"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <img
+              src="/icons/github_color.svg"
+              alt="GitHub"
+              class="h-7 w-7 hover:opacity-80"
+            />
       </a>
 
       <a
-        href=""
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mx-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
-        aria-label="Twitter"
-      >
-        <FaXTwitter className="h-7 w-7" />
+            href="https://www.artstation.com/danyraad"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="ArtStation"
+          >
+            <img
+              src="/icons/artstation_color.svg"
+              alt="ArtStation"
+              class="h-7 w-7 hover:opacity-80"
+            />
       </a>
 
       <a
-        href=""
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mx-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
-        aria-label="Instagram"
-      >
-        <FaInstagram className="h-7 w-7" />
+            href="https://www.youtube.com/@Ing.DanielaRamirez"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <img
+              src="/icons/youtube_color.svg"
+              alt="YouTube"
+              class="h-7 w-7 hover:opacity-80"
+            />
       </a>
+
     </div>
   );
 };
