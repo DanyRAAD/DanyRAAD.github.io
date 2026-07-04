@@ -1,267 +1,55 @@
-import imgNote from "../assets/img-projects/note-app.png";
-import urbanStyle from "../assets/img-projects/urbanStyle.png";
-import legalWeb from "../assets/img-projects/legalweb.webp";
-import mediCare from "../assets/img-projects/medicare.jpg";
-import astroFit from "../assets/img-projects/Astrofit.jpg";
-import Verbenas from "../assets/img-projects/challenge-newyze.png";
-import ReactEcommerce from "../assets/img-projects/ecommers.jpg";
-import PortfolioDev from "../assets/img-projects/PortfolioDev.jpg";
-import VintageTone from "../assets/img-projects/vintageToneApp.jpg";
-import AstroEcommers from "../assets/img-projects/astroEcommers.jpg";
-import CvBuilder from "../assets/img-projects/CvBuilder.png";
-import ChatAi from "../assets/img-projects/ChatAI.png";
-import ProductivityApp from "../assets/img-projects/productivityApp.png";
-import AutomotoresFront from "../assets/img-projects/automotoresFront.jpg";
+import BallonsandBombs from "../assets/img-projects/ballons.png";
+import SoccerBall from "../assets/img-projects/soccer.png";
+import TheElementalHero from "../assets/img-projects/TheElementalHero.png";
+import MilitaryBox  from "../assets/img-projects/militarybox.jpeg";
+import Axe from "../assets/img-projects/axe.jpeg";
 
 export const proyectos = [
   {
-    titulo: "Vintage Tone",
+    titulo: "The Elemental Hero",
     descripcion:
-      "Comercio electrónico completo con carrito de compras, autenticación de usuarios jwt, panel de Admin, Blog, y mas. Stack: Vue.Js - Node.js - Express - MongoDB - Tailwind - Cloudinary.",
-    imagen: VintageTone.src,
-    tecnologias: ["Vue.js", "Tailwind", "Express", "MongoDB"],
-    demo: "https://vintage-tone-front-vue.vercel.app",
-    codigo: "https://github.com/Lautaro-R-collins/VintageTone-Front-Vue.git",
-    categoria: "fullstack",
+      "En este proyecto participé en el desarrollo integral del videojuego, combinando programación y arte 3D. Implementé las mecánicas principales en Unity, desarrollé los modelos del personaje principal y de los enemigos, trabajé con texturas, materiales y shaders, e implementé los sistemas de ataque de los enemigos. Este proyecto representó un gran reto, ya que me permitió integrar distintas áreas del desarrollo de videojuegos en una sola experiencia. ",
+    imagen: TheElementalHero.src,
+    tecnologias: ["Unity", "3DsMax", "C#", "Blender"],
+    //demo: "",
+    codigo: "https://github.com/DanyRAAD/TheElementalHero",
+    categoria: "Game Development",
   },
   {
-    titulo: "React Tiendita",
-    descripcion:
-      "E-commerce full stack desarrollado con React, Node.js y MongoDB. Incluye autenticación, carrito de compras, búsqueda, categorías, reseñas, etc.",
-    imagen: ReactEcommerce.src,
-    tecnologias: ["React", "Tailwind", "Express", "MongoDB"],
-    demo: "https://react-e-commerce-three-phi.vercel.app",
-    codigo: "https://github.com/Lautaro-R-collins/React-E-commerce.git",
-    categoria: "fullstack",
+    titulo: "SoccerBall",
+    imagen: SoccerBall.src,
+    descripcion:"En este proyecto enfrenté retos como implementar un sistema de generación de enemigos por rondas, incrementando progresivamente la dificultad del juego. Mi rol consistió en desarrollar las mecánicas principales, implementar nuevas funcionalidades y solucionar errores para mejorar la experiencia de juego.",
+    tecnologias: ["Unity", "C#"],
+    demo: "https://danyraad.itch.io/soccerball",
+    codigo: "https://github.com/DanyRAAD/UnityCreateWithCode",
+    categoria: "Game Development",
   },
   {
-    titulo: "Productivity App",
-    descripcion:
-      "Aplicación de productividad desarrollada con React, Node.js y MongoDB. Incluye autenticación segura, calendario con eventos, tareas (todo list), Pomodoro timer, un asistente de IA y panel de administración con metricas.",
-    imagen: ProductivityApp.src,
-    tecnologias: ["React", "Tailwind", "Express", "MongoDB"],
-    demo: "https://productivity-app-tau-virid.vercel.app",
-    codigo: "https://github.com/Lautaro-R-collins/productivity-App.git",
-    categoria: "fullstack",
+    titulo: "Ballons and Bombs",
+    descripcion:"En este proyecto implementé sistemas de partículas y efectos de sonido para proporcionar retroalimentación visual y auditiva durante las interacciones del jugador con los objetos del entorno. Además, desarrollé la lógica que detecta la colisión con los enemigos y desencadena el estado de Game Over.",
+    imagen: BallonsandBombs.src,
+    tecnologias: ["Unity", "C#"],
+    demo: "https://danyraad.itch.io/balloons-and-bombs",
+    codigo: "https://github.com/DanyRAAD/UnityCreateWithCode",
+    categoria: "Game Development",
   },
   {
-    titulo: "Chat AI",
-    descripcion:
-      "Aplicación de chatbot impulsada por inteligencia artificial para proporcionar asistencia automatizada.",
-    imagen: ChatAi.src,
-    tecnologias: ["React", "Node.js", "Express", "MongoDB"],
-    demo: "https://multi-model-ai-chat-platform.vercel.app",
-    codigo:
-      "https://github.com/Lautaro-R-collins/Multi-Model-AI-Chat-Platform.git",
-    categoria: "fullstack",
+    titulo: "Military Box",
+    descripcion:"En este proyecto desarrollé el modelo 3D de una caja militar utilizando diferentes técnicas de modelado hard surface. Realicé el proceso de UV Mapping, texturizado y horneado de mapas de normales (Normal Maps) para añadir mayor nivel de detalle sin incrementar la cantidad de polígonos, manteniendo un modelo low poly optimizado para tiempo real. El render final fue realizado en Marmoset Toolbag.",
+    imagen: MilitaryBox.src,
+    tecnologias: ["Blender", "Marmoset", "Substance painter"],
+    demo: "https://www.artstation.com/artwork/P4a6ao",
+    //codigo: "https://github.com/DanyRAAD/UnityCreateWithCode",
+    categoria: "3D Art",
   },
-  {
-    titulo: "Automotores Frontend",
-    descripcion:
-      "Pagina de Automotores desarrollada con React, Tailwind y diseño responsivo.",
-    imagen: AutomotoresFront.src,
-    tecnologias: ["React", "Tailwind", "daisyUI"],
-    demo: "https://automotores-frontend.vercel.app",
-    codigo: "https://github.com/Lautaro-R-collins/Automotores-Frontend.git",
-    categoria: "frontend",
+   {
+    titulo: "Axe",
+    descripcion:"Este proyecto fue desarrollado completamente en Blender, abarcando todo el flujo de trabajo: modelado, esculpido, UV Mapping, horneado (baking) y texturizado. Utilicé el sistema de nodos para la creación de materiales y las herramientas de bake de Blender para generar los mapas necesarios, demostrando que es posible obtener un modelo de alta calidad y realismo sin recurrir a software adicional. ",
+    imagen: Axe.src,
+    tecnologias: ["Blender"],
+    demo: "https://www.artstation.com/artwork/zxV6Lw",
+    //codigo: "https://github.com/DanyRAAD/UnityCreateWithCode",
+    categoria: "3D Art",
   },
-  {
-    titulo: "Astro Ecommerce",
-    descripcion:
-      "E-commerce frontend desarrollado con Astro y React. Incluye carrito de compras, categorías, y diseño responsivo.",
-    imagen: AstroEcommers.src,
-    tecnologias: ["React", "Astro", "Tailwind", "daisyUI"],
-    demo: "https://e-commer-astro.vercel.app",
-    codigo: "https://github.com/Lautaro-R-collins/E-commer-Astro.git",
-    categoria: "frontend",
-  },
-  {
-    titulo: "App organizacion",
-    descripcion:
-      "App full-stack con funciones CRUD, creacion de tableros y listas, autentificacion de usuarios, desarrollada con MERN stack.",
-    imagen: imgNote.src,
-    tecnologias: ["React", "Tailwind", "Express", "MongoDB"],
-    demo: "https://front-react-todo.onrender.com",
-    codigo: "https://github.com/Lautaro-R-collins/Front-react-todo",
-    categoria: "fullstack",
-  },
-  {
-    titulo: "CV Builder",
-    descripcion:
-      "Generador de Currículum multi-idioma profesional siguiendo el formato recomendado por Harvard y amigable con los ATS. ",
-    imagen: CvBuilder.src,
-    tecnologias: ["React", "contextAPI", "tailwind", "i18n"],
-    demo: "https://cv-builder-pi-three.vercel.app",
-    codigo: "https://github.com/Lautaro-R-collins/CV-Builder.git",
-    categoria: "frontend",
-  },
-  {
-    titulo: "E-commerce Urban Style",
-    descripcion:
-      "E-commerce funcional de ropa y accesorios, con carrito de compras categorias y pasarela de pago desarrollado en React.",
-    imagen: urbanStyle.src,
-    tecnologias: ["React", "Tailwind", "Firebase"],
-    demo: "https://proyecto-final-rodriguez-sable.vercel.app/",
-    codigo: "https://github.com/Lautaro-R-collins/ProyectoFinal-Rodriguez.git",
-    categoria: "fullstack",
-  },
-  {
-    titulo: "Tienda Artesana",
-    descripcion:
-      "Ecommerce Full-Stack para ver, comprar y vender tus productos, con login para usuarios y vendedores.",
-    imagen:
-      "https://i.pinimg.com/736x/c9/70/bf/c970bfbc24489e39418b2c1b1f8f74ef.jpg",
-    tecnologias: ["React", "Node", "Express", "MongoDB"],
-    demo: "https://c21-05-ft-node-react-mirror-frontend-64qbwssi2-muyvisual.vercel.app/",
-    codigo: "https://github.com/No-Country-simulation/c21-05-ft-node-react",
-    categoria: "fullstack",
-  },
-  {
-    titulo: "Traker Ingresos-Gastos",
-    descripcion:
-      "App que realiza operaciones CRUD para agregar, ver, editar y eliminar ingresos/gastos.",
-    imagen:
-      "https://i.pinimg.com/736x/a4/85/c4/a485c4da3e78f4f518ddbcdb6637bacf.jpg",
-    tecnologias: ["React", "contextAPI"],
-    demo: "https://traker-gastos-ingresos.onrender.com/",
-    codigo: "https://github.com/Lautaro-R-collins/Traker-Gastos-Ingresos",
-    categoria: "frontend",
-  },
-  {
-    titulo: "App-clima",
-    descripcion:
-      "Aplicación hecha con React que utiliza una API para mostrar el clima en tiempo real.",
-    imagen:
-      "https://i.pinimg.com/736x/10/6e/cd/106ecd1bfe5ed1c3defb83ea0f87a334.jpg",
-    tecnologias: ["React", "contextAPI", "tailwind"],
-    demo: "https://app-clima-om19.onrender.com/",
-    codigo: "https://github.com/Lautaro-R-collins/app-clima",
-    categoria: "frontend",
-  },
-  {
-    titulo: "Portfolio developers astro",
-    descripcion:
-      "This is a modern, responsive developer portfolio built with Astro and Tailwind CSS.",
-    imagen: PortfolioDev.src,
-    tecnologias: ["Astro", "tailwind", "JavaScript"],
-    demo: "https://portfolio-developers-astro.vercel.app/",
-    codigo:
-      "https://github.com/Lautaro-R-collins/Portfolio-developers-astro.git",
-    categoria: "frontend",
-  },
-
-  {
-    titulo: "Legal Staff",
-    descripcion:
-      "Web desarrollada con Astro y Tailwind, embudo de marketing para estudios jurídicos.",
-    imagen: legalWeb.src,
-    tecnologias: ["Astro", "tailwind", "JavaScript"],
-    demo: "https://legal-staff.vercel.app/",
-    codigo: "https://github.com/Lautaro-R-collins/legal-staff",
-    categoria: "frontend",
-  },
-  {
-    titulo: "Medicare",
-    descripcion:
-      "Web desarrollada con Astro y Tailwind, embudo de marketing para Obras Sociales.",
-    imagen: mediCare.src,
-    tecnologias: ["Astro", "tailwind", "JavaScript"],
-    demo: "https://obra-social-landing.vercel.app/",
-    codigo: "https://github.com/Lautaro-R-collins/obra-social-landing.git",
-    categoria: "frontend",
-  },
-  {
-    titulo: "AstroFit",
-    descripcion:
-      "Web desarrollada con Astro y Tailwind, embudo de marketing para asesorias fitness.",
-    imagen: astroFit.src,
-    tecnologias: ["Astro", "tailwind", "JavaScript"],
-    demo: "https://gym-page-sandy.vercel.app/",
-    codigo: "https://github.com/Lautaro-R-collins/GymPage.git",
-    categoria: "frontend",
-  },
-  {
-    titulo: "API REST para Ecommerce",
-    descripcion:
-      "API RESTful construida con Node.js, Express y MongoDB para gestionar tareas con operaciones CRUD, Registro de usuarios y login con JWT.",
-    imagen: "https://miro.medium.com/1*47S4iWVwTicFkFL4-Z4uAA.png",
-    tecnologias: ["Express", "Node.js", "MongoDB", "Mongoose"],
-    demo: "https://react-e-commerce-three-phi.vercel.app",
-    codigo: "https://github.com/Lautaro-R-collins/ApiRest-Ecommerce.git",
-    categoria: "backend",
-  },
-  {
-    titulo: "API REST Vintage Tone App",
-    descripcion:
-      "API RESTful construida con Node.js, Express y MongoDB para gestionar tareas con operaciones CRUD, Registro de usuarios y login con JWT.",
-    imagen: "https://miro.medium.com/1*47S4iWVwTicFkFL4-Z4uAA.png",
-    tecnologias: ["Express", "Node.js", "MongoDB", "Cloudinary"],
-    demo: "https://vintage-tone-front-vue.vercel.app",
-    codigo: "https://github.com/Lautaro-R-collins/VintageTone-API-REST.git",
-    categoria: "backend",
-  },
-  {
-    titulo: "API REST",
-    descripcion:
-      "API RESTful construida con Express y MongoDB para gestionar tareas con operaciones CRUD, Registro de usuarios y login con JWT.",
-    imagen: "https://miro.medium.com/1*47S4iWVwTicFkFL4-Z4uAA.png",
-    tecnologias: ["Express", "Node.js", "MongoDB", "Mongoose"],
-    demo: "https://back-express-todo.onrender.com",
-    codigo: "https://github.com/Lautaro-R-collins/Back-express-todo.git",
-    categoria: "backend",
-  },
-  {
-    titulo: "API Chat AI",
-    descripcion:
-      "API RESTful construida con Express y MongoDB con Registro de usuarios y login con JWT.",
-    imagen: "https://miro.medium.com/1*47S4iWVwTicFkFL4-Z4uAA.png",
-    tecnologias: ["Express", "Node.js", "MongoDB", "Mongoose"],
-    demo: "https://multi-model-ai-chat-platform.vercel.app",
-    codigo:
-      "https://github.com/Lautaro-R-collins/Multi-Model-AI-Chat-Platform/tree/main/backend",
-    categoria: "backend",
-  },
-  {
-    titulo: "API REST",
-    descripcion:
-      "API RESTful construida con Express y MongoDB con Registro de usuarios y login con JWT.",
-    imagen: "https://miro.medium.com/1*47S4iWVwTicFkFL4-Z4uAA.png",
-    tecnologias: ["Express", "Node.js", "MongoDB", "Mongoose"],
-    demo: "https://productivity-app-tau-virid.vercel.app",
-    codigo:
-      "https://github.com/Lautaro-R-collins/productivity-App/tree/main/back",
-    categoria: "backend",
-  },
-  {
-    titulo: "PlaniFy",
-    descripcion:
-      "App Web para organizar tus proyectos, hecha con React + Vite, TypeScript y Tailwind para los estilos.",
-    imagen:
-      "https://i.pinimg.com/736x/8f/f0/bb/8ff0bbd0e5844ed254bede44522c8338.jpg",
-    tecnologias: ["React", "Vite", "TypeScript", "Tailwind"],
-    demo: "https://planify-1tu6.onrender.com/",
-    codigo: "https://github.com/Lautaro-R-collins/PlaniFy-organization-app",
-    categoria: "frontend",
-  },
-  {
-    titulo: "Verbenas Paisajes",
-    descripcion:
-      "Pagina estatica desarrollada con Astro y tailwind como reto para una startup.",
-    imagen: Verbenas.src,
-    tecnologias: ["Astro", "Tailwind", "JavaScript"],
-    demo: "https://challenge-neowyze.onrender.com/",
-    codigo: "https://github.com/Lautaro-R-collins/challenge-Neowyze.git",
-    categoria: "frontend",
-  },
-
-  {
-    titulo: "100 days coding in Js",
-    descripcion: "100 proyectos, realizados con HTML, CSS y JavaScript.",
-    imagen:
-      "https://i.pinimg.com/736x/3b/4f/4e/3b4f4e170fcb1795b88f4941f49df0a2.jpg",
-    tecnologias: ["Next.js", "Tailwind", "GraphQL"],
-    demo: "https://one00-proyects-web.onrender.com/",
-    codigo: "https://github.com/Lautaro-R-collins/100-days-of-coding-in-JS",
-    categoria: "frontend",
-  },
+  
 ];

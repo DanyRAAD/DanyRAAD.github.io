@@ -60,6 +60,19 @@ const SocialIcons = () => {
             />
       </a>
 
+      <a
+            href="https://raicingghosts.itch.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Itch.io"
+          >
+            <img
+              src="/icons/itch-io.svg"
+              alt="Itch.io"
+              class="h-7 w-7 hover:opacity-80"
+            />
+          </a>
+
     </div>
   );
 };
