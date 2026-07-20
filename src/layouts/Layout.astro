@@ -1,7 +1,9 @@
 ---
 import "../styles/global.css";
+import "../styles/cursor.css";
 import Navbar from "../components/commons/navbar/navbar.astro";
 import Footer from "../components/commons/footer/footer.astro";
+import Cursor from "../components/Cursor.astro";
 ---
 
 <!doctype html>
@@ -16,6 +18,7 @@ import Footer from "../components/commons/footer/footer.astro";
   <body class="bg-gray-950 text-white">
     <Navbar />
     <slot />
+    <Cursor />
     <Footer />
   </body>
 </html>

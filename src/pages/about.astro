@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/commons/hero/hero.astro";
 import AboutMe from "../components/about/aboutMe.astro";
-import Experience from "../components/about/experience.astro";
+/* import Experience from "../components/about/experience.astro"; */
 import Skills from "../components/about/skills.astro";
 import FaqsAbout from "../components/about/FaqsAbout.jsx";
 import BannerGithub from "../components/about/bannerGithub.astro";
@@ -12,7 +12,7 @@ import Banner from "../components/commons/banners/banner.astro";
 <Layout title="about" description="about">
   <Hero titulo="About Me" />
   <AboutMe />
-  <Experience />
+  {/* <Experience /> */ }
   <Skills />
   <FaqsAbout client:visible/>
   <BannerGithub />

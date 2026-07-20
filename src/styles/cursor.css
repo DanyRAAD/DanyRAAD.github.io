@@ -1,0 +1,48 @@
+body{
+    cursor:none;
+}
+
+#cursor{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:999999;
+}
+
+#cursor-dot{
+
+    position:absolute;
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:#58A6FF;
+
+    transform:translate3d(-50%,-50%,0);
+}
+
+#cursor-ring{
+
+    position:absolute;
+
+    width:38px;
+    height:38px;
+
+    border-radius:50%;
+
+    border:2px solid #58A6FF;
+
+    transform:translate3d(-50%,-50%,0);
+
+    transition:
+        width .25s,
+        height .25s,
+        border-color .25s;
+
+}
