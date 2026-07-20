@@ -24,6 +24,10 @@ body{
 
     background:#58A6FF;
 
+    box-shadow:
+        0 0 8px #58A6FF,
+        0 0 16px #58A6FF;
+
     transform:translate3d(-50%,-50%,0);
 }
 
@@ -31,18 +35,57 @@ body{
 
     position:absolute;
 
-    width:38px;
-    height:38px;
+    width:28px;
+    height:28px;
 
     border-radius:50%;
 
     border:2px solid #58A6FF;
+
+    background:rgba(88,166,255,.08);
+
+    box-shadow:
+        0 0 8px rgba(88,166,255,.35),
+        0 0 18px rgba(88,166,255,.25),
+        0 0 32px rgba(88,166,255,.18);
+
+    backdrop-filter: blur(2px);
 
     transform:translate3d(-50%,-50%,0);
 
     transition:
         width .25s,
         height .25s,
-        border-color .25s;
+        border-color .25s,
+        box-shadow .25s;
+}
 
+#cursor-trail{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+}
+
+.trail{
+
+    position:absolute;
+
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:#58A6FF;
+
+    opacity:.45;
+
+    box-shadow:
+        0 0 8px rgba(88,166,255,.45);
+
+    transform:translate3d(-50%,-50%,0);
+
+    will-change:transform;
 }
