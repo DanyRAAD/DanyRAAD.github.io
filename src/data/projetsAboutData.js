@@ -6,6 +6,7 @@ import TheElementalHero from "../assets/img-projects/TheElementalHero.png";
 export const proyectos = [
     {
     titulo: "The Elemental Hero",
+    slug: "the-elemental-hero",
     imagen: TheElementalHero.src,
     tecnologias: ["Unity", "3DsMax", "C#", "Blender"],
     //demo: "",
@@ -13,6 +14,7 @@ export const proyectos = [
   },
   {
     titulo: "SoccerBall",
+    slug: "soccerball",
     imagen: SoccerBall.src,
     tecnologias: ["Unity", "C#"],
     demo: "https://danyraad.itch.io/soccerball",
@@ -20,6 +22,7 @@ export const proyectos = [
   },
   {
     titulo: "Ballons and Bombs",
+    slug: "ballons-and-bombs",
     imagen: BallonsandBombs.src,
     tecnologias: ["Unity", "C#"],
     demo: "https://danyraad.itch.io/balloons-and-bombs",

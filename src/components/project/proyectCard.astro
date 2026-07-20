@@ -10,12 +10,13 @@ export interface Props {
   codigo: string;
   categoria?: string;
   index: number; 
+  slug: string;
 }
 
-const { titulo, descripcion, imagen, tecnologias, demo, codigo, categoria, index } =
+const { titulo, descripcion, imagen, tecnologias, demo, codigo, categoria, index, slug } =
   Astro.props;
 ---
-
+<a href={`/projects/${slug}`}>
 <div
   data-index={index}
   data-categoria={categoria ?? ""}
@@ -67,6 +68,8 @@ const { titulo, descripcion, imagen, tecnologias, demo, codigo, categoria, index
           size={18}
         />
       </a>
+      
     </div>
   </div>
 </div>
+</a>

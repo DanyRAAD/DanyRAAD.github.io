@@ -1,0 +1,434 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { projectDetails } from "../../data/projectDetails.js";
+
+export function getStaticPaths() {
+
+  return projectDetails.map((proyecto) => ({
+
+    params:{
+      slug: proyecto.slug
+    },
+
+    props:{
+      proyecto
+    }
+
+  }));
+
+}
+
+
+const { proyecto } = Astro.props;
+
+---
+
+<Layout 
+  title={proyecto.titulo}
+  description={proyecto.descripcionCompleta}
+>
+
+<main class="min-h-screen px-5 pt-32 pb-20">
+
+  <section class="max-w-6xl mx-auto">
+
+  <h1 class="text-5xl font-bold text-white text-center">
+  {proyecto.titulo}
+  </h1>
+
+
+  <img
+  src={proyecto.imagen}
+  alt={proyecto.titulo}
+  class="mt-10 w-full rounded-2xl drop-shadow-[5px_5px_0_#7836cf]"
+  />
+
+
+
+  <div class="mt-12 grid lg:grid-cols-2 gap-10">
+
+
+  <div class="text-gray-300 space-y-8">
+
+
+  <div>
+
+  <h2 class="text-2xl font-bold text-white">
+  Project Overview
+  </h2>
+
+  <p class="mt-3 text-justify" >
+  {proyecto.descripcionCompleta}
+  </p>
+
+  </div>
+
+
+
+  <div>
+
+  <h2 class="text-2xl font-bold text-white">
+  My Contribution
+  </h2>
+
+  <p class="mt-3 text-justify" >
+  {proyecto.miRol}
+  </p>
+
+  </div>
+
+
+
+  <div>
+
+  <h2 class="text-2xl font-bold text-white">
+  Challenges & Solutions
+  </h2>
+
+  <p class="mt-3 text-justify" >
+  {proyecto.retos}
+  </p>
+
+  <p class="mt-3 text-justify">
+  {proyecto.soluciones}
+  </p>
+
+  </div>
+
+
+
+  </div>
+
+
+
+  <div>
+
+  
+
+
+ {
+proyecto.video && (
+
+<div class="aspect-video rounded-xl overflow-hidden bg-gray-900 drop-shadow-[4px_4px_0_#7836cf]">
+
+
+{
+proyecto.video.type === "youtube" && (
+
+<iframe
+src={proyecto.video.url}
+class="w-full h-full"
+allowfullscreen
+loading="lazy"
+></iframe>
+
+)
+}
+
+
+
+{
+proyecto.video.type === "local" && (
+
+<video
+src={proyecto.video.url}
+controls
+class="w-full h-full object-cover"
+></video>
+
+)
+
+}
+
+
+</div>
+
+)
+}
+
+
+
+  <div class="mt-5 flex flex-wrap gap-4">
+
+
+    {
+      proyecto.links.github 
+    ?
+    <a
+      href={proyecto.links.github}
+      target="_blank"
+      class="px-5 py-2 rounded-lg border border-[#7836cf] text-[#7836cf] hover:bg-[#7836cf] hover:text-white transition"
+      >
+      GitHub
+    </a>
+
+    :
+
+    <button
+    disabled
+    class="px-5 py-2 rounded-lg border border-gray-600 text-gray-600 cursor-not-allowed"
+    >
+    GitHub
+    </button>
+    }
+
+    {
+    proyecto.links.itch 
+    ?
+    <a
+    href={proyecto.links.itch}
+    target="_blank"
+    class="px-5 py-2 rounded-lg border border-[#7836cf] text-[#7836cf] hover:bg-[#7836cf] hover:text-white transition"
+    >
+    Itch.io
+    </a>
+
+    :
+
+    <button
+    disabled
+    class="px-5 py-2 rounded-lg border border-gray-600 text-gray-600 cursor-not-allowed"
+    >
+    Itch.io
+    </button>
+    }
+
+    {
+    proyecto.links.arstation 
+    ?
+    <a
+    href={proyecto.links.arstation}
+    target="_blank"
+    class="px-5 py-2 rounded-lg border border-[#7836cf] text-[#7836cf] hover:bg-[#7836cf] hover:text-white transition"
+    >
+    ArtStation
+    </a>
+
+    :
+
+    <button
+    disabled
+    class="px-5 py-2 rounded-lg border border-gray-600 text-gray-600 cursor-not-allowed"
+    >
+    ArtStation
+    </button>
+    }
+
+
+
+    </div>
+
+
+  </div>
+
+
+  </div>
+
+<section class="mt-20 max-w-5xl mx-auto">
+
+
+<h2 class="text-3xl font-bold text-white mb-8">
+Project Information
+</h2>
+
+
+<div 
+class="
+grid
+grid-cols-1
+md:grid-cols-2
+gap-5
+"
+>
+
+
+<div class="bg-gray-900 rounded-xl p-5 drop-shadow-[3px_3px_0_#7836cf]">
+
+<h3 class="text-purple-400 font-bold">
+Category
+</h3>
+
+<p class="text-white mt-2">
+{proyecto.informacion.categoria}
+</p>
+
+</div>
+
+
+
+<div class="bg-gray-900 rounded-xl p-5 drop-shadow-[3px_3px_0_#7836cf]">
+
+<h3 class="text-purple-400 font-bold">
+Role
+</h3>
+
+<p class="text-white mt-2">
+{proyecto.informacion.rol}
+</p>
+
+</div>
+
+
+
+<div class="bg-gray-900 rounded-xl p-5 drop-shadow-[3px_3px_0_#7836cf]">
+
+<h3 class="text-purple-400 font-bold">
+Engine
+</h3>
+
+<p class="text-white mt-2">
+{proyecto.informacion.engine}
+</p>
+
+</div>
+
+
+
+<div class="bg-gray-900 rounded-xl p-5 drop-shadow-[3px_3px_0_#7836cf]">
+
+<h3 class="text-purple-400 font-bold">
+Team
+</h3>
+
+<ul class="text-white mt-2 list-disc list-inside space-y-1">
+
+{
+proyecto.informacion.team.map((member)=>(
+    <li>
+        {member}
+    </li>
+))
+}
+
+</ul>
+
+</div>
+
+
+
+<div class="bg-gray-900 rounded-xl p-5 drop-shadow-[3px_3px_0_#7836cf]">
+
+<h3 class="text-purple-400 font-bold">
+Duration
+</h3>
+
+<p class="text-white mt-2">
+{proyecto.informacion.duracion}
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="mt-16 max-w-5xl mx-auto">
+
+
+<h2 class="text-3xl font-bold text-white mb-8 text-center">
+Tools
+</h2>
+
+
+<div class="flex flex-wrap justify-center gap-6">
+
+
+{
+proyecto.herramientas.map((tool)=>(
+
+<div
+class="
+flex
+items-center
+gap-3
+bg-gray-900
+rounded-xl
+px-5
+py-3
+drop-shadow-[3px_3px_0_#7836cf]
+"
+>
+
+
+<img
+src={tool.icono}
+alt={tool.nombre}
+class="w-8 h-8"
+/>
+
+
+<span class="text-white font-semibold">
+{tool.nombre}
+</span>
+
+
+</div>
+
+))
+}
+
+
+</div>
+
+
+</section>
+
+
+  </section>
+
+  {
+    proyecto.galeria && proyecto.galeria.length > 0 && (
+
+    <section class="mt-20 max-w-6xl mx-auto">
+
+    <h2 class="text-3xl font-bold text-white mb-8 text-center">
+    Gallery
+    </h2>
+
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+    {
+    proyecto.galeria.map((imagen)=>(
+        
+    <div
+    class="overflow-hidden rounded-xl drop-shadow-[4px_4px_0_#7836cf]"
+    >
+
+    <img
+    src={imagen}
+    alt={`Imagen de ${proyecto.titulo}`}
+    class="
+    w-full
+    h-64
+    object-cover
+    transition-transform
+    duration-300
+    hover:scale-105
+    "
+    />
+
+    </div>
+
+    ))
+    }
+
+
+    </div>
+
+
+    </section>
+
+    )
+    }
+
+  </main>
+
+</Layout>

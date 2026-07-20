@@ -7,13 +7,14 @@ export interface Props {
   tecnologias: string[];
   demo: string;
   codigo: string;
+  slug: string; 
 }
 
-const { titulo, imagen, tecnologias, demo, codigo } = Astro.props;
+const { titulo, imagen, tecnologias, demo, codigo, slug } = Astro.props;
 ---
-
 <div
-  class="group flex w-full max-w-md mx-auto flex-col overflow-hidden rounded-xl bg-gray-900 border border-none transition-all hover:scale-[1.015] drop-shadow-[4px_4px_0_#7836cf]"
+  onclick={`window.location.href='/projects/${slug}'`}
+  class="group flex w-full max-w-md mx-auto flex-col overflow-hidden rounded-xl bg-gray-900 border border-none transition-all hover:scale-[1.015] drop-shadow-[4px_4px_0_#7836cf] cursor-pointer"
 >
   <img
     src={imagen}
