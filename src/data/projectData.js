@@ -1,5 +1,5 @@
 import BallonsandBombs from "../assets/img-projects/ballons.png";
-import SoccerBall from "../assets/img-projects/soccer.png";
+import Karim from "../assets/img-projects/Karim.png";
 import TheElementalHero from "../assets/img-projects/TheElementalHero.png";
 import MilitaryBox  from "../assets/img-projects/militarybox.jpeg";
 import Axe from "../assets/img-projects/axe.jpeg";
@@ -9,7 +9,7 @@ export const proyectos = [
     titulo: "The Elemental Hero",
     slug: "the-elemental-hero",
     descripcion:
-      "In this project, I participated in the comprehensive development of the video game, combining programming and 3D art. I implemented the main mechanics in Unity, developed the main character and enemy models, worked with textures, materials, and shaders, and implemented the enemy attack systems. This project represented a great challenge, as it allowed me to integrate different areas of game development into a single experience.",
+      "I contributed to the full development of this video game by combining programming and 3D art. I implemented core gameplay mechanics in Unity, created the main character and enemy models, developed textures and shaders, and programmed the enemy attack systems.",
     imagen: TheElementalHero.src,
     tecnologias: ["Unity", "3DsMax", "C#", "Blender"],
     //demo: "",
@@ -17,14 +17,14 @@ export const proyectos = [
     categoria: "Game Development",
   },
   {
-    titulo: "SoccerBall",
-    slug: "soccerball",
-    imagen: SoccerBall.src,
-    descripcion:"In this project, I took on challenges like implementing a wave-based enemy spawning system that gradually increased the game's difficulty. My role involved developing core mechanics, adding new features, and fixing bugs to enhance the overall gameplay experience.",
-    tecnologias: ["Unity", "C#"],
-    demo: "https://danyraad.itch.io/soccerball",
-    codigo: "https://github.com/DanyRAAD/UnityCreateWithCode",
-    categoria: "Game Development",
+    titulo: "KARIM",
+    slug: "karim",
+    imagen: Karim.src,
+    descripcion:"This project focused on the complete creation of a biped character, covering modeling, sculpting, texture map creation, and animation.",
+    tecnologias: ["Zbrush","Maya", "Blender","Marvelous Designer","Substance Painter","Mamorset Toolbag"],
+    demo: "",
+    codigo: "",
+    categoria: "Technical Art",
   },
   {
     titulo: "Ballons and Bombs",

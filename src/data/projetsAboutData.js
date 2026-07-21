@@ -1,6 +1,6 @@
 
 import BallonsandBombs from "../assets/img-projects/ballons.png";
-import SoccerBall from "../assets/img-projects/soccer.png";
+import Karim from "../assets/img-projects/Karim.png";
 import TheElementalHero from "../assets/img-projects/TheElementalHero.png";
 
 export const proyectos = [
@@ -13,12 +13,12 @@ export const proyectos = [
     codigo: "https://github.com/DanyRAAD/TheElementalHero",
   },
   {
-    titulo: "SoccerBall",
-    slug: "soccerball",
-    imagen: SoccerBall.src,
-    tecnologias: ["Unity", "C#"],
-    demo: "https://danyraad.itch.io/soccerball",
-    codigo: "https://github.com/DanyRAAD/UnityCreateWithCode",
+    titulo: "KARIM",
+    slug: "karim",
+    imagen: Karim.src,
+    tecnologias: ["Zbrush","Maya", "Blender","Marvelous Designer","Substance Painter","Mamorset Toolbag"],
+    demo: "",
+    codigo: "",
   },
   {
     titulo: "Ballons and Bombs",
