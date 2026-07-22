@@ -7,7 +7,7 @@ import Axe from "../assets/img-projects/axe.jpeg";
 export const proyectos = [
   {
     titulo: "The Elemental Hero",
-    slug: "the-elemental-hero",
+    slug: "the-elemental-hero", 
     descripcion:
       "I contributed to the full development of this video game by combining programming and 3D art. I implemented core gameplay mechanics in Unity, created the main character and enemy models, developed textures and shaders, and programmed the enemy attack systems.",
     imagen: TheElementalHero.src,

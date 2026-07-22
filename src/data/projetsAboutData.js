@@ -21,7 +21,7 @@ export const proyectos = [
     codigo: "",
   },
   {
-    titulo: "MagicMix",
+    titulo: "MagicMix", 
     slug: "MagicMix",
     imagen: MagicMix.src,
     tecnologias: ["Unity", "C#","Blender"],

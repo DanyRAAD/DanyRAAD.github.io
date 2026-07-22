@@ -137,7 +137,7 @@ export const projectDetails = [
             {
                 nombre:"Marvelous",
                 icono:"/icons/marvelous.svg"
-            },
+            }, 
             {
                 nombre:"Substance Painter",
                 icono:"/icons/substance.svg"
