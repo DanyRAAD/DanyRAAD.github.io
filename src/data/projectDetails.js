@@ -21,6 +21,7 @@ import MagicJuego2 from "../assets/projects/magimix/juego2.png";
 import MagicLose from "../assets/projects/magimix/lose.png";
 import MagicJuego3 from "../assets/projects/magimix/juego3.png";
 import MagicWin from "../assets/projects/magimix/win.png";
+import MagicVideo from "../assets/videos/MagicMix.mp4";
 
 
 
@@ -215,8 +216,8 @@ export const projectDetails = [
         ],
 
         video:{
-        type:"local",
-        url:"..assets//videos/MagicMix.mp4"
+        type:"youtube",
+        url:"https://www.youtube.com/embed/9SzeYGkHgj4"
         },
 
         links:{

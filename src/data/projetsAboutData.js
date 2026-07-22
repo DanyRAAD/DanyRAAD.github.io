@@ -4,14 +4,7 @@ import Karim from "../assets/img-projects/Karim.png";
 import TheElementalHero from "../assets/img-projects/TheElementalHero.png";
 
 export const proyectos = [
-    {
-    titulo: "The Elemental Hero",
-    slug: "the-elemental-hero",
-    imagen: TheElementalHero.src,
-    tecnologias: ["Unity", "3DsMax", "C#", "Blender"],
-    //demo: "",
-    codigo: "https://github.com/DanyRAAD/TheElementalHero",
-  },
+    
   {
     titulo: "KARIM",
     slug: "karim",
@@ -28,4 +21,13 @@ export const proyectos = [
     demo: "https://knigthcamidev.itch.io/magicmixgame",
     codigo: "https://github.com/CamiBlackFire-Dev/GameJam1-Generation-Cohorte12",
   },
+  {
+    titulo: "The Elemental Hero",
+    slug: "the-elemental-hero",
+    imagen: TheElementalHero.src,
+    tecnologias: ["Unity", "3DsMax", "C#", "Blender"],
+    //demo: "",
+    codigo: "https://github.com/DanyRAAD/TheElementalHero",
+  },
+  
 ];

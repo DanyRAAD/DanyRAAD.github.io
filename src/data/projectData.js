@@ -5,17 +5,7 @@ import MilitaryBox  from "../assets/img-projects/militarybox.jpeg";
 import Axe from "../assets/img-projects/axe.jpeg";
 
 export const proyectos = [
-  {
-    titulo: "The Elemental Hero",
-    slug: "the-elemental-hero", 
-    descripcion:
-      "I contributed to the full development of this video game by combining programming and 3D art. I implemented core gameplay mechanics in Unity, created the main character and enemy models, developed textures and shaders, and programmed the enemy attack systems.",
-    imagen: TheElementalHero.src,
-    tecnologias: ["Unity", "3DsMax", "C#", "Blender"],
-    //demo: "",
-    codigo: "https://github.com/DanyRAAD/TheElementalHero",
-    categoria: "Game Development",
-  },
+
   {
     titulo: "KARIM",
     slug: "karim",
@@ -29,11 +19,22 @@ export const proyectos = [
   {
     titulo: "MagicMix",
     slug: "MagicMix",
-    descripcion:"",
+    descripcion:"Magic Mix is a 3D isometric action game where you play as a wizard battling waves of goblins. Collect magical potions, brew a powerful spell, and defeat the final boss while surviving increasingly difficult enemy waves.",
     imagen: MagicMix.src,
     tecnologias: ["Unity", "C#", "Blender"],
     demo: "https://knigthcamidev.itch.io/magicmixgame",
     codigo: "https://github.com/CamiBlackFire-Dev/GameJam1-Generation-Cohorte12",
+    categoria: "Game Development",
+  },
+  {
+    titulo: "The Elemental Hero",
+    slug: "the-elemental-hero", 
+    descripcion:
+      "I contributed to the full development of this video game by combining programming and 3D art. I implemented core gameplay mechanics in Unity, created the main character and enemy models, developed textures and shaders, and programmed the enemy attack systems.",
+    imagen: TheElementalHero.src,
+    tecnologias: ["Unity", "3DsMax", "C#", "Blender"],
+    //demo: "",
+    codigo: "https://github.com/DanyRAAD/TheElementalHero",
     categoria: "Game Development",
   },
   {
