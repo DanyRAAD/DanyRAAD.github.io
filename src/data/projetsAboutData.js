@@ -1,5 +1,5 @@
 
-import BallonsandBombs from "../assets/img-projects/ballons.png";
+import MagicMix from "../assets/img-projects/MagicMix.png";
 import Karim from "../assets/img-projects/Karim.png";
 import TheElementalHero from "../assets/img-projects/TheElementalHero.png";
 
@@ -21,11 +21,11 @@ export const proyectos = [
     codigo: "",
   },
   {
-    titulo: "Ballons and Bombs",
-    slug: "ballons-and-bombs",
-    imagen: BallonsandBombs.src,
-    tecnologias: ["Unity", "C#"],
-    demo: "https://danyraad.itch.io/balloons-and-bombs",
-    codigo: "https://github.com/DanyRAAD/UnityCreateWithCode",
+    titulo: "MagicMix",
+    slug: "MagicMix",
+    imagen: MagicMix.src,
+    tecnologias: ["Unity", "C#","Blender"],
+    demo: "https://knigthcamidev.itch.io/magicmixgame",
+    codigo: "https://github.com/CamiBlackFire-Dev/GameJam1-Generation-Cohorte12",
   },
 ];

@@ -1,4 +1,4 @@
-import BallonsandBombs from "../assets/img-projects/ballons.png";
+import MagicMix from "../assets/img-projects/MagicMix.png";
 import Karim from "../assets/img-projects/Karim.png";
 import TheElementalHero from "../assets/img-projects/TheElementalHero.png";
 import MilitaryBox  from "../assets/img-projects/militarybox.jpeg";
@@ -27,13 +27,13 @@ export const proyectos = [
     categoria: "Technical Art",
   },
   {
-    titulo: "Ballons and Bombs",
-    slug: "ballons-and-bombs",
-    descripcion:"In this project, I implemented particle systems and sound effects to provide visual and auditory feedback during the player's interactions with environmental objects. Additionally, I developed the logic that detects collisions with enemies and triggers the Game Over state.",
-    imagen: BallonsandBombs.src,
-    tecnologias: ["Unity", "C#"],
-    demo: "https://danyraad.itch.io/balloons-and-bombs",
-    codigo: "https://github.com/DanyRAAD/UnityCreateWithCode",
+    titulo: "MagicMix",
+    slug: "MagicMix",
+    descripcion:"",
+    imagen: MagicMix.src,
+    tecnologias: ["Unity", "C#", "Blender"],
+    demo: "https://knigthcamidev.itch.io/magicmixgame",
+    codigo: "https://github.com/CamiBlackFire-Dev/GameJam1-Generation-Cohorte12",
     categoria: "Game Development",
   },
   {

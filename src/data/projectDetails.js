@@ -14,6 +14,14 @@ import KarimSubstance from "../assets/projects/karim/substance.png";
 import KarimAnimation from "../assets/projects/karim/animation.png";
 import KarimRender from "../assets/projects/karim/render.png";
 /**------------------------------------------------------------------------------ */
+import MagicMix from "../assets/img-projects/MagicMix.png";
+import MagicMenu from "../assets/projects/magimix/menu.png";
+import MagicJuego1 from "../assets/projects/magimix/juego1.png";
+import MagicJuego2 from "../assets/projects/magimix/juego2.png";
+import MagicLose from "../assets/projects/magimix/lose.png";
+import MagicJuego3 from "../assets/projects/magimix/juego3.png";
+import MagicWin from "../assets/projects/magimix/win.png";
+
 
 
 export const projectDetails = [
@@ -159,6 +167,71 @@ export const projectDetails = [
             KarimSubstance.src,
             KarimAnimation.src,
             KarimRender.src 
+        ]
+
+
+    },
+       {
+        slug:"MagicMix",
+        titulo:"MagicMix",
+        imagen:MagicMix.src,
+        descripcionCompleta:
+        "Magic Mix is a 3D isometric game where you play as a wizard who must defeat goblins by casting lightning bolts at the mini goblins. As you progress, you must collect three potions and bring them to the cauldron to brew a magical potion. Once it is ready, you can throw it at the boss to defeat him. Each time you clear a wave of goblins, the next wave spawns with even more enemies, making the game progressively more challenging.",
+        miRol:
+        "During the development of this project, I was responsible for creating the 3D art, designing and implementing the user interface (UI/UX), and integrating the game's audio system. ",
+        retos:
+        "During the development of this project, we faced several challenges. One of the main issues was a problem with the GitHub repository, where our develop branch became corrupted. Another challenge I encountered was the difference between the coordinate systems used by Unity and Blender, as each application uses a different axis orientation, which caused some difficulties when importing and setting up the 3D models.",
+        soluciones:
+        "To solve these issues, we first used a teammate's branch that contained the complete project to create a backup branch. This allowed us to rebuild the develop branch and successfully merge the rest of the team's work. As for the axis orientation issue between Blender and Unity, I adjusted the models' orientation in Blender before exporting and importing them back into Unity, which resolved the problem.",
+        
+        informacion:{
+            categoria:"Game Develope",
+            rol:"Technical Artist - UI/UX",
+            engine:"Unity",
+            team:[
+            "Daniela Ramirez - 3d Artist and Technical Artist",
+            "Sebastian Castellanos Torres - Developing and Mecanics",
+            "D. Camilo Figueroa -  Developing and Tecnical Artist",
+            "Esteban Perdomo - VFX Artist"
+            ],
+            duracion:"3 days"
+
+        },
+
+        herramientas:[
+            {
+                nombre:"Unity",
+                icono:"/icons/unity_gris.svg"
+            },
+            {
+                nombre:"C#",
+                icono:"/icons/csharp.svg"
+            },
+            {
+                nombre:"Blender",
+                icono:"/icons/blender.svg"
+            },
+
+        ],
+
+        video:{
+        type:"local",
+        url:"..assets//videos/MagicMix.mp4"
+        },
+
+        links:{
+            github:"https://github.com/CamiBlackFire-Dev/GameJam1-Generation-Cohorte12",
+            itch:"https://knigthcamidev.itch.io/magicmixgame",
+            artstation:""
+        },
+
+        galeria:[
+            MagicMenu.src,
+            MagicJuego1.src,
+            MagicJuego2.src,
+            MagicLose.src,
+            MagicJuego3.src,
+            MagicWin.src 
         ]
 
 
