@@ -31,6 +31,14 @@ import MilitaryBoxNormals from "../assets/projects/military-box/normals.png";
 import MilitaryBoxReflec from "../assets/projects/military-box/reflectivity.png";
 import MilitaryBoxRender from "../assets/projects/military-box/render.png";
 import MilitaryBoxVideo from "../assets/videos/military-box.mp4";
+/**------------------------------------------------------------------------------ */
+import Axe from "../assets/img-projects/axe.jpeg";
+import Axe1 from "../assets/projects/axe/renderfront.webp";
+import Axe2 from "../assets/projects/axe/renderfront3.webp";
+import Axe3 from "../assets/projects/axe/topologygris.webp";
+import Axe4 from "../assets/projects/axe/renderfront4.webp";
+import Axe5 from "../assets/projects/axe/topology.webp";
+import Axe6 from "../assets/projects/axe/renderfront5.webp";
 
 export const projectDetails = [
 
@@ -301,6 +309,54 @@ export const projectDetails = [
             MilitaryBoxReflec.src,
             MilitaryBoxTopo.src,
             MilitaryBoxRender.src 
+        ]
+
+    },
+    {
+        slug:"axe",
+        titulo:"Axe",
+        imagen:Axe.src,
+        descripcionCompleta:
+        "This project consists of a fully modeled axe created in Blender, following a structured workflow based on a reference image. The process began with the low-poly model, followed by the high-poly version and detailed sculpting directly in Blender. Afterwards, the UVs were unwrapped, texture maps were baked, and the textures were created and painted within Blender, resulting in an optimized game-ready asset",
+        miRol:
+        "My role in this project was to create the asset from start to finish, handling the modeling, sculpting, UV unwrapping, texture baking, texturing, and final rendering.",
+        retos:
+        "One of the main challenges in this project was sculpting in Blender, as I was still learning how to use the tool effectively. This required experimenting with different brushes and techniques until I achieved the level of detail I was aiming for.",
+        soluciones:
+        "To overcome this challenge, I spent time practicing and improving my sculpting skills in Blender. Through consistent practice and careful refinement of the model's details, I was able to achieve a higher-quality and more accurate final result.",
+        
+        informacion:{
+            categoria:"3D Artist",
+            rol:"3D Artist",
+            engine:"Blender",
+            team:[
+            "Daniela Ramirez - 3d Artist"
+            ],
+            duracion:"1 month"
+
+        },
+
+        herramientas:[
+            {
+                nombre:"Blender",
+                icono:"/icons/blender.svg"
+            }
+
+        ],
+
+        links:{
+            github:"",
+            itch:"",
+            arstation:"https://www.artstation.com/artwork/P4a6ao"
+        },
+
+        galeria:[
+            Axe1.src,
+            Axe2.src,
+            Axe3.src,
+            Axe4.src,
+            Axe5.src,
+            Axe6.src, 
         ]
 
     }
