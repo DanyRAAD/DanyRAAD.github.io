@@ -22,8 +22,15 @@ import MagicLose from "../assets/projects/magimix/lose.png";
 import MagicJuego3 from "../assets/projects/magimix/juego3.png";
 import MagicWin from "../assets/projects/magimix/win.png";
 import MagicVideo from "../assets/videos/MagicMix.mp4";
-
-
+/**------------------------------------------------------------------------------ */
+import MilitaryBox  from "../assets/img-projects/militarybox.jpeg";
+import MilitaryBoxOpen from "../assets/projects/military-box/open.webp";
+import MilitaryBoxAlbedo from "../assets/projects/military-box/albedo.png";
+import MilitaryBoxTopo from "../assets/projects/military-box/topology.png";
+import MilitaryBoxNormals from "../assets/projects/military-box/normals.png";
+import MilitaryBoxReflec from "../assets/projects/military-box/reflectivity.png";
+import MilitaryBoxRender from "../assets/projects/military-box/render.png";
+import MilitaryBoxVideo from "../assets/videos/military-box.mp4";
 
 export const projectDetails = [
 
@@ -235,6 +242,66 @@ export const projectDetails = [
             MagicWin.src 
         ]
 
+    },
+    {
+        slug:"military-box",
+        titulo:"Military Box",
+        imagen:MilitaryBox.src,
+        descripcionCompleta:
+        "This is a personal project focused on modeling an optimized military crate for use in video games. The asset was created in Blender using a high-poly to low-poly workflow for baking normal maps and other textures. The texturing process was completed in Substance Painter, adding a higher level of detail and realism to the final asset.",
+        miRol:
+        "My role in this project was primarily focused on the artistic direction and the complete creation of the asset from scratch. Using references of military crates designed for weapon storage and transportation, I was responsible for defining the visual style, creating the 3D model, producing the high-poly and low-poly versions, UV unwrapping, texture baking, and texturing in Substance Painter. Finally, I created the final renders for presentation.",
+        retos:
+        "One of the biggest challenges in this project was the retopology process. During texture baking, the normal maps were not projecting correctly onto the low-poly model, resulting in visual artifacts. To solve this, I refined the topology and adjusted the mesh until I achieved a clean bake, producing an optimized asset with a higher-quality final result.",
+        soluciones:
+        "To solve this issue, I created a cleaner and more optimized retopology by reducing unnecessary vertices and improving the mesh flow. I also paid close attention to the areas where the baking artifacts appeared, manually adjusting them until the normal maps projected correctly, resulting in a cleaner and more optimized final asset.",
+        
+        informacion:{
+            categoria:"3D Artist",
+            rol:"3D Artist",
+            engine:"Blender",
+            team:[
+            "Daniela Ramirez - 3d Artist"
+            ],
+            duracion:"1 month"
+
+        },
+
+        herramientas:[
+            {
+                nombre:"SubstancePainter",
+                icono:"/icons/substance.svg"
+            },
+            {
+                nombre:"Blender",
+                icono:"/icons/blender.svg"
+            },
+            {
+                nombre:"Marmoset Toolbag",
+                icono:"/icons/marmoset.svg"
+            },
+
+        ],
+
+        video:{
+        type:"local",
+        url: MilitaryBoxVideo,
+        },
+
+        links:{
+            github:"",
+            itch:"",
+            arstation:"https://www.artstation.com/artwork/P4a6ao"
+        },
+
+        galeria:[
+            MilitaryBoxAlbedo.src,
+            MilitaryBoxNormals.src,
+            MilitaryBoxOpen.src,
+            MilitaryBoxReflec.src,
+            MilitaryBoxTopo.src,
+            MilitaryBoxRender.src 
+        ]
 
     }
 
