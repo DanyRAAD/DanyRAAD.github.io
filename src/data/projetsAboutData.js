@@ -4,9 +4,18 @@ import Karim from "../assets/img-projects/Karim.png";
 import TheElementalHero from "../assets/img-projects/TheElementalHero.png";
 import MilitaryBox  from "../assets/img-projects/militarybox.jpeg";
 import Intothedeep from "../assets/img-projects/Intothedeep.png";
+import Eyesoftarot from "../assets/img-projects/Eyesoftarot.png";
 
 export const proyectos = [
     
+  {
+    titulo: "Eyes of Tarot",
+    slug: "eyes-of-tarot",
+    imagen: Eyesoftarot.src,
+    tecnologias: ["Unity", "C#","Blender","substance painter"],
+    demo: "https://cischristian.itch.io/eyes-of-tarot",
+    codigo: "https://github.com/Mc-Gilford/ArcanoXV-Los-Ojos-del-Tarot/tree/develop",
+  },
   {
     titulo: "Into the Deep",
     slug: "into-the-deep",

@@ -47,9 +47,76 @@ import Intothedeep3 from "../assets/projects/into-the-deep/submarino.png";
 import Intothedeep4 from "../assets/projects/into-the-deep/proyectil.png";
 import Intothedeep5 from "../assets/projects/into-the-deep/tutorial.png";
 import Intothedeep6 from "../assets/projects/into-the-deep/pezpayaso.png";
+/**------------------------------------------------------------------------------ */
+import Eyesoftarot from "../assets/img-projects/Eyesoftarot.png";
+import Eyesoftarot1 from "../assets/projects/eyes-of-tarot/acechador.jpeg";
+import Eyesoftarot2 from "../assets/projects/eyes-of-tarot/interfaz.png";
+import Eyesoftarot3 from "../assets/projects/eyes-of-tarot/tutorial.png";
+import Eyesoftarot4 from "../assets/projects/eyes-of-tarot/arana.jpeg";
+import Eyesoftarot5 from "../assets/projects/eyes-of-tarot/inicio.png";
+import Eyesoftarot6 from "../assets/projects/eyes-of-tarot/pausa.png";
 
 export const projectDetails = [
-
+    {
+        slug:"eyes-of-tarot",
+        titulo:"Eyes of Tarot",
+        imagen:Eyesoftarot.src,
+        descripcionCompleta:
+        "Eyes of Tarot is a first-person survival horror game that tells the story of Rosario, a woman who, after attempting to change the fate of her family, became trapped as a ghost within a mysterious mansion. Years later, a fighter arrives at the mansion with his sister seeking shelter, unaware that she will soon disappear inside. He must venture into the mansion to find her, solve puzzles, and face the creatures lurking within while trying to survive the terrifying ghost of Rosario. Throughout the adventure, the player must carefully explore the mansion, find objects and clues, solve various puzzles, and fight enemies as they uncover the truth behind Rosario and the mansion.",
+        miRol:
+        "My main responsibility in this project was creating the 3D models for the enemies, particularly the spider and the stalker, as well as designing and modeling the entire mansion. I also worked on the level planning, from creating the initial layout to designing the corridors and rooms. Additionally, I was responsible for the complete development of the game's UI/UX interface.",
+        retos:
+        "One of the main challenges was creating the entire mansion from scratch, including generating the UVs for each room and finding suitable textures for every area. Another challenge was developing the interface, as I had to find the right visual assets and typography to match the game's aesthetic and atmosphere.",
+        soluciones:
+        "I overcame these challenges mainly through patience and organization, as creating UVs for every room and door could become repetitive and time-consuming due to the number of elements. For the UI, I used AI tools to create and adapt visual assets that helped strengthen the game's aesthetic and maintain a consistent look throughout the interface.",
+        informacion:{
+            categoria:"Game Development",
+            rol:"3D Artist / Technical Artist / UI/UX Designer",
+            engine:"Unity",
+            team:[
+            "Daniela Ramirez - 3D Artist / Technical Artist / UI/UX Designer",
+            "Aaragon Zabala Bryan Andres - Programer",
+            "Christian Iván Cisneros Rosales - Programer",
+            "José Rodríguez Aparicio - Programer",
+            ],
+            duracion:"3 weeks"
+        },
+        herramientas:[
+            {
+                nombre:"Unity",
+                icono:"/icons/unity_gris.svg"
+            },
+            {
+                nombre:"C#",
+                icono:"/icons/csharp.svg"
+            },
+            {
+                nombre:"Blender",
+                icono:"/icons/blender.svg"
+            },
+            {
+                nombre:"Substance Painter",
+                icono:"/icons/substance.svg"
+            }
+        ],
+        video:{
+        type:"youtube",
+        url:"https://youtube.com/embed/9sCmIhdycXw"
+        },
+        links:{
+            github:"https://github.com/Mc-Gilford/ArcanoXV-Los-Ojos-del-Tarot/tree/develop",
+            itch:"https://cischristian.itch.io/eyes-of-tarot",
+            artstation:""
+        },
+        galeria:[
+            Eyesoftarot1.src,
+            Eyesoftarot2.src,
+            Eyesoftarot3.src,
+            Eyesoftarot4.src,
+            Eyesoftarot5.src,
+            Eyesoftarot6.src 
+        ]
+    },
     {
         slug:"into-the-deep",
         titulo:"Into the Deep",

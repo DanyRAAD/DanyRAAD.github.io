@@ -4,9 +4,20 @@ import TheElementalHero from "../assets/img-projects/TheElementalHero.png";
 import MilitaryBox  from "../assets/img-projects/militarybox.jpeg";
 import Axe from "../assets/img-projects/axe.jpeg";
 import Intothedeep from "../assets/img-projects/Intothedeep.png";
+import Eyesoftarot from "../assets/img-projects/Eyesoftarot.png";
 
 export const proyectos = [
 
+  {
+    titulo: "Eyes of Tarot",
+    slug: "eyes-of-tarot",
+    imagen: Eyesoftarot.src,
+    descripcion:"**Eyes of Tarot** is a first-person survival horror game that follows a fighter who arrives at a mysterious mansion with his sister. When she disappears, he must explore the mansion, solve puzzles, and face its dangers to find her and survive the ghost of Rosario.",
+    tecnologias: ["Unity", "C#","Blender","substance painter"],
+    demo: "https://cischristian.itch.io/eyes-of-tarot",
+    codigo: "https://github.com/Mc-Gilford/ArcanoXV-Los-Ojos-del-Tarot/tree/develop",
+    categoria: "Game Development",
+  },
   {
     titulo: "Into the Deep",
     slug: "into-the-deep",
