@@ -3,9 +3,20 @@ import Karim from "../assets/img-projects/Karim.png";
 import TheElementalHero from "../assets/img-projects/TheElementalHero.png";
 import MilitaryBox  from "../assets/img-projects/militarybox.jpeg";
 import Axe from "../assets/img-projects/axe.jpeg";
+import Intothedeep from "../assets/img-projects/Intothedeep.png";
 
 export const proyectos = [
 
+  {
+    titulo: "Into the Deep",
+    slug: "into-the-deep",
+    imagen: Intothedeep.src,
+    descripcion:"Into the Deep is a 3D survival game where you must survive in the depths of the ocean while hordes of aggressive creatures hunt you down. Use different cannons to defend yourself and survive as long as possible.",
+    tecnologias: ["Unity", "C#","Blender"],
+    demo: "https://cischristian.itch.io/into-the-deep",
+    codigo: "https://github.com/Mc-Gilford/Into-The-Deep",
+    categoria: "Game Development",
+  },
   {
     titulo: "KARIM",
     slug: "karim",

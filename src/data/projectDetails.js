@@ -39,28 +39,87 @@ import Axe3 from "../assets/projects/axe/topologygris.webp";
 import Axe4 from "../assets/projects/axe/renderfront4.webp";
 import Axe5 from "../assets/projects/axe/topology.webp";
 import Axe6 from "../assets/projects/axe/renderfront5.webp";
+/**------------------------------------------------------------------------------ */
+import Intothedeep from "../assets/img-projects/Intothedeep.png";
+import Intothedeep1 from "../assets/projects/into-the-deep/juego.png";
+import Intothedeep2 from "../assets/projects/into-the-deep/angel.png";
+import Intothedeep3 from "../assets/projects/into-the-deep/submarino.png";
+import Intothedeep4 from "../assets/projects/into-the-deep/proyectil.png";
+import Intothedeep5 from "../assets/projects/into-the-deep/tutorial.png";
+import Intothedeep6 from "../assets/projects/into-the-deep/pezpayaso.png";
 
 export const projectDetails = [
 
     {
+        slug:"into-the-deep",
+        titulo:"Into the Deep",
+        imagen:Intothedeep.src,
+        descripcionCompleta:
+        "Into the Deep is a third-person game where you control a submarine stranded at the bottom of the ocean. Your goal is to survive as long as possible in the depths while facing creatures that may seem harmless at first but become dangerous enemies. To defend yourself, you can fire projectiles from your submarine.",
+        miRol:
+        "My main responsibility in this project was creating the 3D models, including the fish, submarines, and some decorative elements such as the terrain. To optimize the game's performance, I worked with low-poly models. I was also responsible for animating the fish and properly integrating them into the project.",
+        retos:
+        "One of the main challenges during development was the limited time available, as I had to create a large number of 3D models within a short period. Another challenge was animating each fish while making sure their movements were suitable for the underwater environment.",
+        soluciones:
+        "To overcome the limited development time, I optimized the modeling process by using low-poly assets while maintaining a good balance between visual quality and performance. For the animations, I leveraged my Blender skills and established a reusable workflow for each fish, making the animation process much faster and easier once the first model was completed.",
+        informacion:{
+            categoria:"Game Development",
+            rol:"3D Artist / Technical Artist",
+            engine:"Unity",
+            team:[
+            "Daniela Ramirez - 3D Artist / Technical Artist",
+            "Lizardo Esteban Perdomo Carrera - UI/UX Designer",
+            "Christian Iván Cisneros Rosales - Programer",
+            "José Rodríguez Aparicio - Programer",
+            ],
+            duracion:"2 days"
+        },
+        herramientas:[
+            {
+                nombre:"Unity",
+                icono:"/icons/unity_gris.svg"
+            },
+            {
+                nombre:"C#",
+                icono:"/icons/csharp.svg"
+            },
+            {
+                nombre:"Blender",
+                icono:"/icons/blender.svg"
+            },
+        ],
+        video:{
+        type:"youtube",
+        
+        url:"https://youtube.com/embed/gCAAQy3SZaU"
+        },
+        links:{
+            github:"https://github.com/Mc-Gilford/Into-The-Deep",
+            itch:"https://cischristian.itch.io/into-the-deep",
+            artstation:""
+        },
+        galeria:[
+            Intothedeep1.src,
+            Intothedeep2.src,
+            Intothedeep3.src,
+            Intothedeep4.src,
+            Intothedeep5.src,
+            Intothedeep6.src 
+        ]
+    },
+    {
         slug:"the-elemental-hero",
         titulo:"The Elemental Hero",
         imagen:TheElementalHero.src,
-
         descripcionCompleta:
         "The Elemental Hero is a third-person action-adventure game developed in Unity. In this experience, players take on the role of a young adventurer who must overcome a series of challenges, explore diverse environments, and battle enemies to restore balance to the world. Throughout the journey, players collect elemental powers to ultimately defeat the sorcerer Zaron and bring peace back to the kingdom.",
-
         miRol:
         "In this project, I took on a generalist role, contributing to multiple areas of development. My responsibilities included gameplay programming, 3D art creation, shader implementation, particle effects, animation integration, UI development, and audio implementation.",
-
         retos:
         "Throughout the development process, I faced several technical challenges. One of the main challenges was implementing an enemy attack system that allowed enemies to detect the player and throw rocks with consistent behavior. Another challenge was developing an in-game shop where players could purchase potions and integrating it smoothly with the game's progression system.",
-
         soluciones:
         "To overcome these challenges, I used Unity's **NavMesh** system to enable enemies to detect and pursue the player. Once the player entered a specified range, enemies launched a rock projectile using a prefab-based attack system. For the shop, I implemented a currency system to track and deduct coins when purchasing potions, while integrating the health and shield bars so that potion usage correctly updated the player's status.",
-
         informacion:{
-
             categoria:"Game Development",
             rol:"Gameplay Programmer / Technical Artist",
             engine:"Unity",
@@ -68,9 +127,7 @@ export const projectDetails = [
             "Daniela Ramirez - Gameplay Programmer",
             ],
             duracion:"5 Months"
-
         },
-
         herramientas:[
             {
                 nombre:"Unity",
@@ -88,21 +145,16 @@ export const projectDetails = [
                 nombre:"3DsMax",
                 icono:"/icons/3dsmax.svg"
             },
-
         ],
-
-
         video:{
         type:"youtube",
         url:"https://www.youtube.com/embed/s9YoPTpBGLY"
         },
-
         links:{
             github:"https://github.com/DanyRAAD/TheElementalHero",
             itch:"",
             artstation:""
         },
-
         galeria:[
             ElementalInterface.src,
             ElementalEnemy.src,
@@ -111,7 +163,6 @@ export const projectDetails = [
             ElementalChallenge2.src,
             ElementalEnd.src 
         ]
-
     },
     {
         slug:"karim",

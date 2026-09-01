@@ -3,9 +3,18 @@ import MagicMix from "../assets/img-projects/MagicMix.png";
 import Karim from "../assets/img-projects/Karim.png";
 import TheElementalHero from "../assets/img-projects/TheElementalHero.png";
 import MilitaryBox  from "../assets/img-projects/militarybox.jpeg";
+import Intothedeep from "../assets/img-projects/Intothedeep.png";
 
 export const proyectos = [
     
+  {
+    titulo: "Into the Deep",
+    slug: "into-the-deep",
+    imagen: Intothedeep.src,
+    tecnologias: ["Unity", "C#","Blender"],
+    demo: "https://cischristian.itch.io/into-the-deep",
+    codigo: "https://github.com/Mc-Gilford/Into-The-Deep",
+  },
   {
     titulo: "KARIM",
     slug: "karim",
